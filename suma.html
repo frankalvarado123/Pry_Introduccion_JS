@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Operaciones Aritméticas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        input[type="number"], input[type="text"] {
+            padding: 8px;
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .resultado-label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .resultado-caja {
+            width: 98%;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 8px 16px;
+            font-size: 16px;
+        }
+        .ajustar {
+           text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" href="lib/bootstrap-5.3.5-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container ajustar">
+        <div class="row">
+        <div class="col-sm-3">
+             <input type="number" id="txt_numero_1" placeholder="Número 1">
+    <input type="number" id="txt_numero_2" placeholder="Número 2">
+    <br>
+
+    <label class="resultado-label" for="resultado_suma">Suma:</label>
+    <input type="text" id="resultado_suma" class="resultado-caja" readonly>
+        </div>
+        <div class="col-sm-3">
+    
+<input type="number" id="txt_numero_3" placeholder="Número 3">
+    <input type="number" id="txt_numero_4" placeholder="Número 4">
+    <br>
+
+      <label class="resultado-label" for="resultado_resta">Resta:</label>
+    <input type="text" id="resultado_resta" class="resultado-caja" readonly>
+        </div>
+        <div class="col-sm-3">  <input type="number" id="txt_numero_5" placeholder="Número 5">
+    <input type="number" id="txt_numero_6" placeholder="Número 6">
+    <br>
+
+<label class="resultado-label" for="resultado_multiplicacion">Multiplicación:</label>
+    <input type="text" id="resultado_multiplicacion" class="resultado-caja" readonly></div>
+        <div class="col-sm-3">
+             <input type="number" id="txt_numero_7" placeholder="Número 7">
+    <input type="number" id="txt_numero_8" placeholder="Número 8">
+    <br>
+
+    <label class="resultado-label" for="resultado_division">División:</label>
+    <input type="text" id="resultado_division" class="resultado-caja" readonly>
+        </div>
+    </div>
+    <div class="row ajustar">
+            <button id="btn_calcular" onclick="calcular_suma(),calcular_resta(),calcular_multiplicacion(),calcular_division()">Calcular</button>
+
+    </div>
+    </div>
+    
+
+
+
+
+
+    <script src="js/calcularSuma.js"></script>
+</body>
+</html>
